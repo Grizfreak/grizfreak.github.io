@@ -1837,7 +1837,6 @@ blockquote {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2229,10 +2228,20 @@ blockquote {
 			margin: 0 0 0.5em 0;
 		}
 
+		.work-item h6 {
+			color: #F5F5F5;
+			margin: 0 0 0 0;
+		}
+
+
 		.work-item p {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+		}
+
+		.work-item .little {
+			font-size: 0.6em;
 		}
 
 /* Header */
