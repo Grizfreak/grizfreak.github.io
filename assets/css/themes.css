@@ -1,0 +1,306 @@
+/* Light theme variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --secondary-color: #6c757d;
+    --section-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --header-bg: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --nav-text: #333333;
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --hero-bg: url('../img/new/Day.png');
+    --section-title-color: #333333;
+    --skill-text-color: #333333;
+    --portfolio-text-color: #333333;
+    --paragraph-color: #333333;
+    --portfolio-overlay-bg: rgba(255, 255, 255, 0.9);
+    --portfolio-title-color: #333333;
+    --cv-button-bg: transparent;
+    --cv-button-text: #333333;
+    --cv-button-border: #333333;
+    --cv-button-hover-bg: #ff0505;
+    --cv-button-hover-text: #ffffff;
+    --main-bg-color: #f0f2f5;
+}
+
+/* Dark theme variables */
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --secondary-color: #6c757d;
+    --section-bg: #2d2d2d;
+    --border-color: #404040;
+    --header-bg: #1a1a1a;
+    --nav-bg: rgba(26, 26, 26, 0.95);
+    --nav-text: #ffffff;
+    --card-bg: #2d2d2d;
+    --card-border: #404040;
+    --hero-bg: url('../img/new/Night.png');
+    --section-title-color: #ffffff;
+    --skill-text-color: #ffffff;
+    --portfolio-text-color: #ffffff;
+    --paragraph-color: #ffffff;
+    --portfolio-overlay-bg: rgba(0, 0, 0, 0.85);
+    --portfolio-title-color: #ffffff;
+    --cv-button-bg: transparent;
+    --cv-button-text: #ffffff;
+    --cv-button-border: #ffffff;
+    --cv-button-hover-bg: #ff0505;
+    --cv-button-hover-text: #ffffff;
+    --main-bg-color: #222222;
+}
+
+/* Light Theme (Default) */
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --secondary-color: #6c757d;
+  --section-bg: #f8f9fa;
+  --border-color: #dee2e6;
+  --header-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-text: #333333;
+  --hero-bg: url('../img/new/Day.png');
+  --section-title-color: #333333;
+  --skill-text-color: #333333;
+  --portfolio-text-color: #333333;
+  --paragraph-color: #333333;
+  --portfolio-overlay-bg: rgba(255, 255, 255, 0.9);
+  --portfolio-title-color: #333333;
+  --card-bg: #ffffff;
+  --card-border: #e0e0e0;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --secondary-color: #6c757d;
+  --section-bg: #2d2d2d;
+  --border-color: #404040;
+  --header-bg: #1a1a1a;
+  --nav-bg: rgba(26, 26, 26, 0.95);
+  --nav-text: #ffffff;
+  --hero-bg: url('../img/new/Night.png');
+  --section-title-color: #ffffff;
+  --skill-text-color: #ffffff;
+  --portfolio-text-color: #ffffff;
+  --paragraph-color: #ffffff;
+  --portfolio-overlay-bg: rgba(0, 0, 0, 0.85);
+  --portfolio-title-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --card-border: #404040;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section {
+  background-color: var(--section-bg);
+}
+
+.header {
+  background-color: var(--header-bg);
+}
+
+.navmenu a {
+  color: var(--nav-text);
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu li:hover > a {
+  color: var(--nav-hover);
+}
+
+.navmenu a#themeToggle {
+  color: var(--nav-text);
+  transition: all 0.3s ease;
+}
+
+.navmenu a#themeToggle:hover {
+  color: var(--nav-hover);
+}
+
+.navmenu a#themeToggle i {
+  transition: transform 0.3s ease;
+}
+
+.navmenu a#themeToggle:hover i {
+  transform: rotate(15deg);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.card, .portfolio-item {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Section titles */
+.section-title h2 {
+  color: var(--section-title-color);
+}
+
+/* Skills section */
+.progress {
+  background-color: var(--card-bg);
+}
+
+.progress-bar {
+  background-color: var(--link-color);
+}
+
+.skill {
+  color: var(--skill-text-color);
+}
+
+/* Portfolio section */
+.portfolio-info {
+  background: var(--portfolio-overlay-bg);
+}
+
+.portfolio-info p {
+  color: var(--portfolio-text-color);
+}
+
+/* Contact section */
+.info-item {
+  color: var(--text-color);
+}
+
+.info-item h3 {
+  color: var(--text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+}
+
+/* Theme toggle button */
+.theme-toggle .btn-link {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle .btn-link:hover {
+  transform: rotate(15deg);
+}
+
+/* Portfolio filters */
+.portfolio-filters li {
+  color: var(--text-color);
+}
+
+.portfolio-filters li.filter-active {
+  color: var(--link-color);
+}
+
+/* Add paragraph styles */
+p, div p {
+  color: var(--paragraph-color);
+  transition: color 0.3s ease;
+}
+
+/* Update specific paragraph styles */
+.hero p, .hero div p {
+  color: #333333; /* Fixed color for this specific paragraph */
+}
+
+.about p, .about div p {
+  color: var(--paragraph-color);
+}
+
+.skills p, 
+.skills div p,
+.skills span {
+  color: var(--paragraph-color);
+}
+
+.portfolio p, .portfolio div p {
+  color: var(--paragraph-color);
+}
+
+.contact p, .contact div p {
+  color: var(--paragraph-color);
+}
+
+/* Ensure paragraphs in cards and other containers maintain proper color */
+.card p, 
+.portfolio-item p,
+.skill-item p,
+.contact-info p {
+  color: var(--paragraph-color);
+}
+
+/* Ensure paragraphs in modals maintain proper color */
+.modal p, 
+.modal-body p {
+  color: var(--paragraph-color);
+}
+
+.cv-button {
+    background-color: var(--cv-button-bg);
+    color: var(--cv-button-text);
+    border-color: var(--cv-button-border);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: var(--cv-button-hover-bg);
+    color: var(--cv-button-hover-text);
+    border-color: var(--cv-button-hover-bg);
+}
+
+.cv-button i {
+    color: var(--cv-button-text);
+    transition: color 0.3s ease;
+}
+
+.cv-button:hover i {
+    color: var(--cv-button-hover-text);
+}
+
+.portfolio-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.hero .social-links {
+    margin-top: 20px;
+}
+
+/* Make typed text color consistent across themes */
+.typed {
+  --text-color: #333333;
+}
+
+.theme-toggle {
+    z-index: 1000;
+}
+
+/* Main section background */
+main {
+    background-color: var(--main-bg-color);
+    transition: background-color 0.3s ease;
+}
