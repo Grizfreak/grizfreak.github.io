@@ -28,6 +28,59 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/themes.css" rel="stylesheet">
 
+  <style>
+    .skills .skill-card {
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .light-theme .skills .skill-card {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    
+    .dark-theme .skills .skill-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .skills .skill-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .skills .skill-card i {
+      font-size: 36px;
+      margin-right: 15px;
+      color: var(--accent-color);
+    }
+    .skills .skill-card ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+    .skills .skill-card ul li {
+      padding-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+    .skills .skill-card ul li:last-child {
+      padding-bottom: 0;
+    }
+    .skills .skill-card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: MyResume
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -112,55 +165,125 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>C / C++ / C#</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Python</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Java</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Swift / Android / Flutter</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>SQL / NoSQL</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>HTML / CSS / PHP</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>React / Javascript / NodeJS</span>
-            </div><!-- End Skills Item -->
-
+        <div class="row gy-4">
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-file-earmark-code"></i>
+                <h3>Develop programs</h3>
+              </div>
+              <ul>
+                <li>Python</li>
+                <li>Javascript / Typescript / NodeJS</li>
+                <li>C# / C++ / .NET</li>
+                <li>HTML / CSS</li>
+                <li>Android / Flutter / Swift</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-controller"></i>
+                <h3>Game Engine Development</h3>
+              </div>
+              <ul>
+                <li>Unity Engine</li>
+                <li>Unreal Engine</li>
+                <li>Godot (knowledge)</li>
+                <li>Blender</li>
+                <li>Substance Painter</li>
+                <li>C++ / C# / C</li>
+              </ul>
+            </div>
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-database"></i>
+                <h3>Database Administration</h3>
+              </div>
+              <ul>
+                <li>PL/SQL (Stored Procedures, Views, Permissions)</li>
+                <li>NoSQL</li>
+              </ul>
+            </div>
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-cloud-arrow-down"></i>
+                <h3>Virtualization and deployment</h3>
+              </div>
+              <ul>
+                <li>VirtualBox / VMWare</li>
+                <li>Docker / Kubernetes / Portainer</li>
+                <li>CI/CD process</li>
+                <li>Ansible / Jenkins</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-bar-chart"></i>
+                <h3>Data Visualization</h3>
+              </div>
+              <ul>
+                <li>Matplotlib, scikit-learn, Numpy</li>
+                <li>Excel</li>
+              </ul>
+            </div>
           </div>
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Unity / Unreal Engine / Godot</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Blender / Substance Painter</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Jetbrains Suite</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Visual Studio / .NET Suite </span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Adobe Suite</span>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>Office Suite</span>
-            </div><!-- End Skills Item -->
-
+          <div class="col-lg-6 d-flex flex-column">
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-cpu"></i>
+                <h3>Artificial Intelligence</h3>
+              </div>
+              <ul>
+                <li>Machine Learning</li>
+                <li>Symbolic AI (knowledge)</li>
+                <li>LLMs (knowledge)</li>
+              </ul>
+            </div>
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-github"></i>
+                <h3>Collaboration work</h3>
+              </div>
+              <ul>
+                <li>Github/Gitlab/Sourcetree</li>
+                <li>CI/CD Development</li>
+              </ul>
+            </div>
+            <div class="skill-card mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-robot"></i>
+                <h3>Test Automation</h3>
+              </div>
+              <ul>
+                <li>Selenium</li>
+                <li>Squish (Java, Python, etc..)</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-code-slash"></i>
+                <h3>Softwares</h3>
+              </div>
+              <ul>
+                <li>Jetbrains Suite</li>
+                <li>Visual Studio / .NET Suite</li>
+                <li>Adobe Suite</li>
+                <li>Office Suite</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-people"></i>
+                <h3>Soft Skills</h3>
+              </div>
+              <ul>
+                <li>SCRUM / AGILE</li>
+                <li>Jira / Trello</li>
+                <li>Collaborative</li>
+              </ul>
+            </div>
           </div>
-
         </div>
 
       </div>
@@ -317,16 +440,16 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Contact</h2>
       </div><!-- End Section Title -->
 
-      <div class="container d-flex justify-content-center" data-aos="fade" data-aos-delay="100">
+      <div class="container d-flex justify-content-center">
 
         <div class="row gy-4">
 
           <div class="col-lg-20">
-            <div class="info-item d-flex" data-aos="fade">
+            <div class="info-item d-flex" >
               <a href="https://github.com/grizfreak" class="d-flex text-decoration-none" style="color: inherit;" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-github flex-shrink-0"></i>
                 <div>
@@ -336,7 +459,7 @@
               </a>
             </div>
 
-            <div class="info-item d-flex" data-aos="fade">
+            <div class="info-item d-flex" >
               <a href="https://www.linkedin.com/in/antonin-a/" class="d-flex text-decoration-none" style="color: inherit;" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-linkedin flex-shrink-0"></i>
                 <div>
@@ -346,7 +469,7 @@
               </a>
             </div>
 
-            <div class="info-item d-flex" data-aos="fade">
+            <div class="info-item d-flex" >
               <a href="mailto:aaubert@et.esiea.fr" class="d-flex text-decoration-none" style="color: inherit;">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>

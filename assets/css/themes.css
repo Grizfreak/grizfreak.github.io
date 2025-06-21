@@ -304,3 +304,8 @@ main {
     background-color: var(--main-bg-color);
     transition: background-color 0.3s ease;
 }
+
+.skills .skill-card li, 
+.skills .skill-card h3 {
+  color: var(--paragraph-color);
+}
