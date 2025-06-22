@@ -73,6 +73,14 @@ body.dark-theme {
   --card-border: #e0e0e0;
 }
 
+.light-theme .hero .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.light-theme .hero .social-links a:hover {
+  color: #ffffff;
+}
+
 /* Dark Theme */
 .dark-theme {
   --bg-color: #1a1a1a;
@@ -92,6 +100,14 @@ body.dark-theme {
   --portfolio-title-color: #ffffff;
   --card-bg: #2d2d2d;
   --card-border: #404040;
+}
+
+.dark-theme .hero .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-theme .hero .social-links a:hover {
+  color: #ffffff;
 }
 
 /* Apply theme variables */

@@ -130,9 +130,16 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  let lightbox = null;
+  window.initGLightbox = function() {
+    if (lightbox) {
+      lightbox.destroy();
+    }
+    lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  }
+  window.initGLightbox();
 
   /**
    * Init isotope layout and filters

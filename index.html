@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Antonin AUBERT</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title data-i18n-key="meta.title">Portfolio - Antonin AUBERT</title>
+  <meta content="" name="description" data-i18n-key="meta.description">
+  <meta content="" name="keywords" data-i18n-key="meta.keywords">
 
   <!-- Favicons -->
   <link href="images/favicon/favicon.ico" rel="icon">
@@ -98,12 +98,13 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i><span>Skills</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-        <li><a href="#" id="themeToggle"><i class="bi bi-moon-fill navicon"></i><span>Theme</span></a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n-key="nav.home">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span data-i18n-key="nav.about">About</span></a></li>
+        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i><span data-i18n-key="nav.skills">Skills</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span data-i18n-key="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-i18n-key="nav.contact">Contact</span></a></li>
+        <li><a href="#" id="themeToggle"><i class="bi bi-moon-fill navicon"></i><span data-i18n-key="nav.theme">Theme</span></a></li>
+        <li><a href="#" id="langToggle" title="Changer de langue"><i class="bi bi-translate navicon"></i><span id="langToggleText">FR</span></a></li>
       </ul>
     </nav>
   </header>
@@ -135,13 +136,13 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Currently in my final year of <b>engineering studies at ESIEA (Laval campus in FRANCE), specializing in Virtual Reality</b>, I am interested in various fields such as <b>application development, multimedia development, and mixed reality development.</b>
+        <h2 data-i18n-key="about.title">About</h2>
+        <p data-i18n-key="about.description">Currently in my final year of <b>engineering studies at ESIEA (Laval campus in FRANCE), specializing in Virtual Reality</b>, I am interested in various fields such as <b>application development, multimedia development, and mixed reality development.</b>
           <b>Passionate about music, video games, animated series, and cooking,</b> I aim to contribute by offering new technologies for <b>both entertainment and everyday support.</b></p>
           <div class="mt-4 d-flex justify-content-center">
             <a href="assets/cv.pdf" class="d-flex align-items-center px-4 py-2 rounded-pill border cv-button" target="_blank">
               <i class="bi bi-file-earmark-text flex-shrink-0 me-2"></i>
-              <p class="mb-0">View my CV</p>
+              <p class="mb-0" data-i18n-key="about.cv">View my CV</p>
             </a>
           </div>
       </div><!-- End Section Title -->
@@ -160,7 +161,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
+        <h2 data-i18n-key="skills.title">Skills</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -170,7 +171,7 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-file-earmark-code"></i>
-                <h3>Develop programs</h3>
+                <h3 data-i18n-key="skills.dev.title">Develop programs</h3>
               </div>
               <ul>
                 <li>Python</li>
@@ -184,7 +185,7 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-controller"></i>
-                <h3>Game Engine Development</h3>
+                <h3 data-i18n-key="skills.game.title">Game Engine Development</h3>
               </div>
               <ul>
                 <li>Unity Engine</li>
@@ -198,9 +199,9 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-database"></i>
-                <h3>Database Administration</h3>
+                <h3 data-i18n-key="skills.db.title">Database Administration</h3>
               </div>
-              <ul>
+              <ul data-i18n-list="skills.db.items">
                 <li>PL/SQL (Stored Procedures, Views, Permissions)</li>
                 <li>NoSQL</li>
               </ul>
@@ -208,7 +209,7 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-cloud-arrow-down"></i>
-                <h3>Virtualization and deployment</h3>
+                <h3 data-i18n-key="skills.virt.title">Virtualization and deployment</h3>
               </div>
               <ul>
                 <li>VirtualBox / VMWare</li>
@@ -220,7 +221,7 @@
             <div class="skill-card">
               <div class="d-flex align-items-center">
                 <i class="bi bi-bar-chart"></i>
-                <h3>Data Visualization</h3>
+                <h3 data-i18n-key="skills.data.title">Data Visualization</h3>
               </div>
               <ul>
                 <li>Matplotlib, scikit-learn, Numpy</li>
@@ -232,9 +233,9 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-cpu"></i>
-                <h3>Artificial Intelligence</h3>
+                <h3 data-i18n-key="skills.ai.title">Artificial Intelligence</h3>
               </div>
-              <ul>
+              <ul data-i18n-list="skills.ai.items">
                 <li>Machine Learning</li>
                 <li>Symbolic AI (knowledge)</li>
                 <li>LLMs (knowledge)</li>
@@ -243,7 +244,7 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-github"></i>
-                <h3>Collaboration work</h3>
+                <h3 data-i18n-key="skills.collab.title">Collaboration work</h3>
               </div>
               <ul>
                 <li>Github/Gitlab/Sourcetree</li>
@@ -253,7 +254,7 @@
             <div class="skill-card mb-4">
               <div class="d-flex align-items-center">
                 <i class="bi bi-robot"></i>
-                <h3>Test Automation</h3>
+                <h3 data-i18n-key="skills.test.title">Test Automation</h3>
               </div>
               <ul>
                 <li>Selenium</li>
@@ -263,7 +264,7 @@
             <div class="skill-card">
               <div class="d-flex align-items-center">
                 <i class="bi bi-code-slash"></i>
-                <h3>Softwares</h3>
+                <h3 data-i18n-key="skills.soft.title">Softwares</h3>
               </div>
               <ul>
                 <li>Jetbrains Suite</li>
@@ -275,9 +276,9 @@
             <div class="skill-card">
               <div class="d-flex align-items-center">
                 <i class="bi bi-people"></i>
-                <h3>Soft Skills</h3>
+                <h3 data-i18n-key="skills.softskills.title">Soft Skills</h3>
               </div>
-              <ul>
+              <ul data-i18n-list="skills.softskills.items">
                 <li>SCRUM / AGILE</li>
                 <li>Jira / Trello</li>
                 <li>Collaborative</li>
@@ -295,7 +296,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2 data-i18n-key="portfolio.title">Portfolio</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -303,9 +304,9 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-game">Games</li>
-            <li data-filter=".filter-app">Apps</li>
+            <li data-filter="*" class="filter-active" data-i18n-key="portfolio.filter.all">All</li>
+            <li data-filter=".filter-game" data-i18n-key="portfolio.filter.games">Games</li>
+            <li data-filter=".filter-app" data-i18n-key="portfolio.filter.apps">Apps</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -313,9 +314,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/24.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Laval Virtual Hackathon 2025 Project</h4>
+                <h4 data-i18n-key="port1.title">Laval Virtual Hackathon 2025 Project</h4>
                 <p>Unity / Visual Studio / Blender</p>
-                <a href="images/thumbs/24.jpg" title="Laval Virtual Hackathon 2025 Project - Game developed in 30 hours during the Laval Virtual Hackathon, with the goal of showcasing it at innovation exhibitions" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/24.jpg" data-i18n-title="port1.desc" title="Laval Virtual Hackathon 2025 Project - Game developed in 30 hours during the Laval Virtual Hackathon, with the goal of showcasing it at innovation exhibitions" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://gitlab.esiea.fr/aaubert/lavalvirtual-hackathon-2025" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -323,9 +324,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/27.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Greenwire - An asymetric coop game</h4>
+                <h4 data-i18n-key="port2.title">Greenwire - An asymetric coop game</h4>
                 <p>Unity / Visual Studio / Blender</p>
-                <a href="images/thumbs/27.png" title="Greenwire - Asymmetric game in Virtual Reality and on PC developed in Unity as part of a year-long project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/27.png" data-i18n-title="port2.desc" title="Greenwire - Asymmetric game in Virtual Reality and on PC developed in Unity as part of a year-long project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://gitlab.esiea.fr/aaubert/greenwire" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -333,18 +334,18 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/25.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Bin Sweeper</h4>
+                <h4 data-i18n-key="port3.title">Bin Sweeper</h4>
                 <p>Unity / Visual Studio / Blender</p>
-                <a href="images/thumbs/25.png" title="Bin Sweeper - Game developed in 30 hours during the ESIEA XR Jam 2025, later adopted by Laval Agglomération to educate the public on waste sorting" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/25.png" data-i18n-title="port3.desc" title="Bin Sweeper - Game developed in 30 hours during the ESIEA XR Jam 2025, later adopted by Laval Agglomération to educate the public on waste sorting" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="images/thumbs/23.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Gundam-like project</h4>
+                <h4 data-i18n-key="port4.title">Gundam-like project</h4>
                 <p>Unity / Visual Studio / Blender</p>
-                <a href="images/thumbs/23.jpg" title="Gundam-like project - Construction of a remotely controlled bipedal robot in virtual reality, including an onboard camera system" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/23.jpg" data-i18n-title="port4.desc" title="Gundam-like project - Construction of a remotely controlled bipedal robot in virtual reality, including an onboard camera system" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://gitlab.esiea.fr/thibaut.bellanger/pst-5a-robot" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -352,9 +353,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/26.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Simple Shooter</h4>
+                <h4 data-i18n-key="port5.title">Simple Shooter</h4>
                 <p>Unity / Visual Studio</p>
-                <a href="images/thumbs/26.png" title="Simple Shooter - 3D shooting game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/26.png" data-i18n-title="port5.desc" title="Simple Shooter - 3D shooting game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://gitlab.esiea.fr/aaubert/prog-gameplay" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -362,9 +363,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/22.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>VR Simple Shooter</h4>
+                <h4 data-i18n-key="port6.title">VR Simple Shooter</h4>
                 <p>Unity / Visual Studio</p>
-                <a href="images/thumbs/22.jpeg" title="VR Simple Shooter - Virtual Reality shooting game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/22.jpeg" data-i18n-title="port6.desc" title="VR Simple Shooter - Virtual Reality shooting game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/guenael-lr/shooterVR" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -372,9 +373,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/20.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>VR Tower Defense game</h4>
+                <h4 data-i18n-key="port7.title">VR Tower Defense game</h4>
                 <p>Unity / Visual Studio / Blender</p>
-                <a href="images/thumbs/20.jpeg" title="VR Tower Defense game - Virtual Reality Tower Defense game developed in Unity during a JAM (2-day game creation event)." data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/20.jpeg" data-i18n-title="port7.desc" title="VR Tower Defense game - Virtual Reality Tower Defense game developed in Unity during a JAM (2-day game creation event)." data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/Grizfreak/VRJAM" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -382,9 +383,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/21.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Simple platforming game</h4>
+                <h4 data-i18n-key="port8.title">Simple platforming game</h4>
                 <p>Unity / Visual Studio</p>
-                <a href="images/thumbs/21.png" title="Simple platforming game - Platformer game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/21.png" data-i18n-title="port8.desc" title="Simple platforming game - Platformer game developed in Unity as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://gitlab.esiea.fr/aaubert/simple-platformer-2d-unity" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -392,18 +393,18 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="images/thumbs/19.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Octopus Project</h4>
+                <h4 data-i18n-key="port9.title">Octopus Project</h4>
                 <p>Visual Studio Code / Virtualbox / Ansible / Docker / NodeJS</p>
-                <a href="images/thumbs/19.png" title="Octopus Project - Development of a white station with a logging system and network-based update mechanism; the project is fully free and open source." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/19.png" data-i18n-title="port9.desc" title="Octopus Project - Development of a white station with a logging system and network-based update mechanism; the project is fully free and open source." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-game">
               <img src="images/thumbs/13.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Lethal League (Arcade Version)</h4>
+                <h4 data-i18n-key="port10.title">Lethal League (Arcade Version)</h4>
                 <p>Pycharm / Pygame</p>
-                <a href="images/thumbs/13.jpg" title="Lethal League (Arcade Version) - Game developed in Python based on the original game Lethal League by Team Reptile, created as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/13.jpg" data-i18n-title="port10.desc" title="Lethal League (Arcade Version) - Game developed in Python based on the original game Lethal League by Team Reptile, created as part of a course project" data-gallery="portfolio-gallery-game" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/Suna24/Lethal-League" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -411,9 +412,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="images/thumbs/18.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>JVThèque</h4>
+                <h4 data-i18n-key="port11.title">JVThèque</h4>
                 <p>Android Studio / Photoshop / Premiere Pro</p>
-                <a href="images/thumbs/18.jpg" title="JVThèque - Android application for managing a video game library" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/18.jpg" data-i18n-title="port11.desc" title="JVThèque - Android application for managing a video game library" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/Grizfreak/JVTheque" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -421,9 +422,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="images/thumbs/15.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>PokemonQuizz</h4>
+                <h4 data-i18n-key="port12.title">PokemonQuizz</h4>
                 <p>Android Studio / Photoshop</p>
-                <a href="images/thumbs/15.jpg" title="PokemonQuizz - Android quiz application themed around all existing Pokemon" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="images/thumbs/15.jpg" data-i18n-title="port12.desc" title="PokemonQuizz - Android quiz application themed around all existing Pokemon" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/Grizfreak/PokemonQuizz" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -441,7 +442,7 @@
 
       <!-- Section Title -->
       <div class="container section-title">
-        <h2>Contact</h2>
+        <h2 data-i18n-key="contact.title">Contact</h2>
       </div><!-- End Section Title -->
 
       <div class="container d-flex justify-content-center">
@@ -453,7 +454,7 @@
               <a href="https://github.com/grizfreak" class="d-flex text-decoration-none" style="color: inherit;" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-github flex-shrink-0"></i>
                 <div>
-                  <h3>Check my projects</h3>
+                  <h3 data-i18n-key="contact.proj.title">Check my projects</h3>
                   <p>Grizfreak</p>
                 </div>
               </a>
@@ -463,7 +464,7 @@
               <a href="https://www.linkedin.com/in/antonin-a/" class="d-flex text-decoration-none" style="color: inherit;" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-linkedin flex-shrink-0"></i>
                 <div>
-                  <h3>Text Me</h3>
+                  <h3 data-i18n-key="contact.text.title">Text Me</h3>
                   <p>antonin-a</p>
                 </div>
               </a>
@@ -473,7 +474,7 @@
               <a href="mailto:aaubert@et.esiea.fr" class="d-flex text-decoration-none" style="color: inherit;">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Me</h3>
+                  <h3 data-i18n-key="contact.email.title">Email Me</h3>
                   <p>aaubert@et.esiea.fr</p>
                 </div>
               </a>
@@ -492,10 +493,10 @@
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
+        <div class="copyright" data-i18n-key="footer.copyright" data-i18n-vars='{"year": "2024", "name": "Antonin AUBERT"}'>
+          <span>Copyright</span> <strong class="px-1 sitename">Antonin AUBERT</strong> <span>All Rights Reserved</span>
         </div>
-        <div class="credits">
+        <div class="credits" data-i18n-key="footer.credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
@@ -527,6 +528,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- THEME SWITCHER SCRIPT -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const themeToggle = document.getElementById('themeToggle');
@@ -588,6 +590,10 @@
       });
     });
   </script>
+
+  <!-- LANGUAGE SWITCHER SCRIPTS -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/language-switcher.js"></script>
 
 </body>
 
